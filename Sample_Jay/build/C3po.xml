@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name='C3PO Automation Suite' parallel='tests' thread-count='1'>
+    
+<!-- 	Put IP of localhost/Grid Hub machine -->
+	 <parameter name='selenium.host' value='localhost' /> 
+
+<!-- 	Put Port of localhost RC/Grid Hub machine -->
+	 <parameter name='selenium.port' value='4444' /> 
+	 <parameter name='browser' value="chrome" /> 
+
+<parameter name='url' value='www.google.com'/>
+
+
+<test name=''>
+	<classes>
+		<class name='com.temp.sample'>
+			<methods>
+				<include name='google'></include>
+			</methods>
+		</class>
+	</classes>
+</test>
+</suite>
